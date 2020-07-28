@@ -1,4 +1,4 @@
-modules.define('example', ['i-bem-dom'], function(provide, bemDom) {
+modules.define('search', ['i-bem-dom'], function(provide, bemDom) {
 
 provide(bemDom.declBlock(this.name, {
     onSetMod: {

@@ -14,10 +14,7 @@
 // 100 высота экрана с вычетом адресной строки.
 // https://github.com/Hiswe/vh-check
 @mixin vh-check {
-  height: 100vh;
-  /* If you need to support browser without CSS var support (<= IE11) *//**/
   height: calc(100vh - var(--vh-offset, 0));
-  /* enable vh fix */
 }
 
 
@@ -94,4 +91,18 @@
   &::after {
     margin-top: calc(-#{$dynamic-bottom-crop}em + #{$bottom-adjustment});
   }
+}
+
+@mixin includeFont ($font-weight, $font-family, $font-name) {
+  font-weight: $font-weight;
+  font-family: "#{$font-family}";
+  src: local($font-family), url("../../fonts/#{$font-name}.woff2") format("woff2"), url("../../fonts/#{$font-name}.woff") format("woff");
+  font-display: swap;
+}
+
+@mixin pseudo() {
+  content: "";
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center;
 }

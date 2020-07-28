@@ -1,8 +1,9 @@
-.menu__btn {
+.menu__button {
   width: 30px;
   height: 30px;
   padding: 0;
   font-size: 0;
+  background: transparent;
   border: none;
   cursor: pointer;
   appearance: none;
@@ -11,8 +12,9 @@
 .menu__hamburger {
   position: relative;
   display: block;
-  height: 2px;
+  height: 3px;
   background-color: #000000;
+  opacity: 0.7;
   transition: all 0.3s;
 
   &::before,
@@ -47,5 +49,99 @@
       bottom: 0;
       transform: rotate(-45deg);
     }
+  }
+}
+
+.menu__close {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  margin-left: auto;
+  padding: 0;
+  background: transparent;
+  border: none;
+  appearance: none;
+
+  svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.menu__inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  width: 100%;
+  min-height: 100vh;
+  background: #e5e5e5;
+}
+
+.menu__list {
+  @include list-reset;
+  border-top: 0.25px solid #333333;
+}
+
+.menu__item {
+  padding: 15px 20px;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+  border-bottom: 0.25px solid #333333;
+  opacity: 0.8;
+}
+
+@media (min-width: 768px) {
+  .menu__button {
+    display: none;
+  }
+
+  .menu__inner {
+    position: relative;
+    top: unset;
+    left: unset;
+    display: block;
+    min-height: unset;
+  }
+
+  .menu__close {
+    display: none;
+  }
+
+  .menu__list {
+    display: flex;
+    padding: 7px 15px;
+    border-top: unset;
+  }
+
+  .menu__item {
+    padding: 0;
+    font-size: 12px;
+    line-height: 14px;
+    color: #000000;
+    text-transform: uppercase;
+    border-bottom: unset;
+
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .menu__inner {
+    background: transparent;
+  }
+
+  .menu__list {
+    padding: 7px 0;
+  }
+
+  .menu {
+    background: #e5e5e5;
   }
 }

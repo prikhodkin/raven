@@ -1,0 +1,15 @@
+@font-face {
+  @include includeFont(300, $first-font, "Rubik-Light");
+}
+
+@font-face {
+  @include includeFont(400, $first-font, "Rubik-Regular");
+}
+
+@font-face {
+  @include includeFont(500, $first-font, "Rubik-Medium");
+}
+
+@font-face {
+  @include includeFont(700, $first-font, "Rubik-Bold");
+}
