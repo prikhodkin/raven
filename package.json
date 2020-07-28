@@ -19,7 +19,7 @@
     "babel-preset-env": "^1.7.0",
     "bem-tools-core": "0.0.3",
     "bem-tools-create": "^2.3.0",
-    "browser-sync": "^2.26.7",
+    "browser-sync": "^2.26.12",
     "browserslist": "^4.12.0",
     "caniuse-lite": "^1.0.30001084",
     "eslint": "^7.4.0",
