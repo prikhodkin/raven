@@ -7,6 +7,11 @@
 
 .panel__delivery {
   display: none;
+  transition: all 0.3s;
+
+  &:hover {
+    color: #fcde43;
+  }
 }
 
 .panel__catalog {
@@ -20,6 +25,11 @@
   color: #ffffff;
   text-transform: uppercase;
   background: linear-gradient(0deg, #282828 37%, #d5d5d5 120%);
+  transition: all 0.3s;
+
+  &:hover {
+    color: #fcde43;
+  }
 
   &::before {
     @include pseudo;
@@ -101,6 +111,14 @@
 
 @media (min-width: 1200px) {
   .panel {
-    @include page-wrapper;
+    width: 1170px;
+    margin: 0 auto;
+    border-radius: 5px;
+  }
+
+  .panel__catalog {
+    &::after {
+      margin-left: 40px;
+    }
   }
 }

@@ -1,0 +1,23 @@
+.buy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 9px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+  text-transform: uppercase;
+  background: #fcde43;
+  border-radius: 5px;
+
+  &::before {
+    @include pseudo;
+    width: 24px;
+    height: 21px;
+    margin-right: 5px;
+    background-image: url("../../img/buy.png");
+    background-size: contain;
+  }
+}

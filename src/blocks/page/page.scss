@@ -1,0 +1,19 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.page__footer {
+  margin-top: auto;
+}
+
+@media (min-width: 1200px) {
+  .page__main {
+    margin-top: 20px;
+    padding-bottom: 80px;
+  }
+}

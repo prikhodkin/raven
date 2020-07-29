@@ -1,0 +1,23 @@
+.social {
+  @include list-reset;
+}
+
+.social__item {
+  margin: 14px 8px;
+
+  a {
+    display: block;
+  }
+
+  svg {
+    width: 29px;
+    height: 29px;
+    transition: all 0.3s;
+
+    fill: #ffffff;
+
+    &:hover {
+      fill: #fcde43;
+    }
+  }
+}

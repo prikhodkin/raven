@@ -13,6 +13,16 @@
   color: rgba(0, 0, 0, 0.69);
   text-transform: uppercase;
 
+  &:hover {
+    &::before {
+      animation: left 0.5s ease infinite;
+    }
+
+    &::after {
+      animation: right 0.5s ease infinite;
+    }
+  }
+
   &::before {
     @include pseudo;
     width: 27px;
@@ -20,6 +30,7 @@
     margin-right: 20px;
     background-image: url("../../img/more__left.png");
     background-size: contain;
+    transition: all 0.3s;
   }
 
   &::after {
@@ -29,5 +40,34 @@
     margin-left: 20px;
     background-image: url("../../img/more__right.png");
     background-size: contain;
+    transition: all 0.3s;
+  }
+}
+
+@keyframes left {
+  0% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(-5px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes right {
+  0% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(5px);
+  }
+
+  100% {
+    transform: translateX(0);
   }
 }

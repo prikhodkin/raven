@@ -1,0 +1,161 @@
+.sidebar {
+  display: none;
+  width: 100%;
+  background: #ffffff;
+}
+
+.sidebar__close {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: 70px;
+  margin: 0 auto;
+  padding: 0;
+  background: transparent;
+  border: none;
+  appearance: none;
+
+  svg {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.sidebar__list {
+  @include list-reset;
+}
+
+.sidebar__link {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 19px 15px;
+  padding-right: 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.69);
+
+  &--parent {
+    &::after {
+      @include pseudo;
+      position: absolute;
+      top: 50%;
+      right: 7px;
+      width: 7px;
+      height: 15px;
+      background-image: url("../../img/sidebar__arrow.png");
+      background-size: contain;
+      transform: translateY(-50%);
+    }
+  }
+
+  svg {
+    width: 32px;
+    height: 32px;
+    margin-right: 25px;
+  }
+}
+
+.sidebar__header {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  color: rgba(0, 0, 0, 0.69);
+  text-transform: uppercase;
+  transition: all 0.3s;
+}
+
+.sidebar__count {
+  display: inline-block;
+  margin-left: auto;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: right;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.sidebar__sub-list {
+  @include list-reset;
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  .sidebar {
+    display: block;
+  }
+
+  .sidebar__close {
+    display: none;
+  }
+
+  .sidebar__item {
+    position: relative;
+
+    &:hover {
+      margin-top: -1px;
+
+      .sidebar__link {
+        background: linear-gradient(0deg, #282828 37%, #d5d5d5 120%);
+        border-bottom: 2px solid #fcde43;
+        border-radius: 5px 0 0 5px;
+
+        &::after {
+          background-image: url("../../img/sidebar__arrow-hover.png");
+        }
+
+        svg {
+          fill: #ffffff;
+        }
+
+        .sidebar__header {
+          color: #ffffff;
+        }
+
+        .sidebar__count {
+          color: #ffffff;
+        }
+      }
+    }
+
+    &--parent {
+      &:hover {
+        & > .sidebar__sub-list {
+          display: block;
+
+          .sidebar__item {
+            margin-top: 0;
+
+            &:last-child {
+              .sidebar__link {
+                border-radius: 0 0 5px 5px;
+              }
+            }
+
+            &:first-child {
+              .sidebar__link {
+                border-radius: 0 5px 0 0;
+              }
+            }
+          }
+
+          .sidebar__link {
+            border-radius: 0;
+
+            &:hover {
+              .sidebar__header {
+                margin-left: 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .sidebar__sub-list {
+    position: absolute;
+    top: 0;
+    right: -100%;
+    width: 250px;
+  }
+}

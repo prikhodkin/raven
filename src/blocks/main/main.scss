@@ -1,0 +1,25 @@
+.main__sidebar {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+@media (min-width: 1200px) {
+  .main {
+    @include page-wrapper;
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .main__content {
+    margin-left: 15px;
+  }
+
+  .main__sidebar {
+    position: relative;
+    top: unset;
+    left: unset;
+    width: 250px;
+    min-width: 250px;
+  }
+}

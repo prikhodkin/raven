@@ -6,6 +6,7 @@ const libs =
   './node_modules/wow.js/dist/wow.js',
   './node_modules/slick-carousel/slick/slick.min.js',
   './node_modules/hc-sticky/dist/hc-sticky.js',
+  './node_modules/jquery.maskedinput/src/jquery.maskedinput.js'
 ]
 
 export default libs;

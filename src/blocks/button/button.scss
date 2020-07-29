@@ -1,0 +1,15 @@
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  background: linear-gradient(0deg, #282828 37%, #d5d5d5 120%);
+  border: none;
+  border-radius: 5px;
+}
