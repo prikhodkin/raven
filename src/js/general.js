@@ -6,14 +6,6 @@ $(`.menu__close`).on(`click`, () => {
   $(`.menu__inner`).fadeOut();
 });
 
-$(`.panel__catalog`).on(`click`, () => {
-  $(`.sidebar`).fadeIn();
-});
-
-$(`.sidebar__close`).on(`click`, () => {
-  $(`.sidebar`).fadeOut();
-});
-
 $(`input[type=tel]`).mask(`+7(999) 999-99-99`);
 
 $(`.product-card__control--min`).click(function () {
@@ -37,6 +29,17 @@ $(`.slider__list`).slick({
   nextArrow: `.slider__control--next`,
   dots: false
 })
+
+if($(window).width() < 1200) {
+  $(`.panel__catalog`).on(`click`, (evt) => {
+    evt.preventDefault();
+    $(`.sidebar`).fadeIn();
+  });
+
+  $(`.sidebar__close`).on(`click`, () => {
+    $(`.sidebar`).fadeOut();
+  });
+}
 
 if($(window).width() >= 768) {
   $(window).scroll(function () {

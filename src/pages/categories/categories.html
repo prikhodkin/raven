@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Каталог</title>
+  @@include('../../blocks/favicon/favicon.html')
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body class="page">
+  @@include('../../blocks/header/header.html')
+  @@include('../../blocks/panel/panel.html')
+  <main class="main page__main">
+    @@include('../../blocks/sidebar/sidebar.html')
+    <div class="main__content main__content--inner">
+      @@include('../../blocks/breadcrumbs/breadcrumbs.html')
+      <section class="categories">
+        <h1 class="categories__title title">Каталог</h1>
+        <ul class="categories__list">
+          <li class="categories__item">
+            <a href="category.html">
+              <svg>
+                <use xlink:href="img/sprites/sprite.svg#icon__snake"></use>
+              </svg>
+              <p class="categories__header">змеи</p>
+            </a>
+          </li>
+          <li class="categories__item">
+            <a href="category.html">
+              <svg>
+                <use xlink:href="img/sprites/sprite.svg#icon__spider"></use>
+              </svg>
+              <p class="categories__header">членистоногие</p>
+            </a>
+          </li>
+          <li class="categories__item">
+            <a href="category.html">
+              <svg>
+                <use xlink:href="img/sprites/sprite.svg#icon__frog"></use>
+              </svg>
+              <p class="categories__header">амфибии</p>
+            </a>
+          </li>
+          <li class="categories__item">
+            <a href="category.html">
+              <svg>
+                <use xlink:href="img/sprites/sprite.svg#icon__bird"></use>
+              </svg>
+              <p class="categories__header">птицы</p>
+            </a>
+          </li>
+          <li class="categories__item">
+            <a href="category.html">
+              <svg>
+                <use xlink:href="img/sprites/sprite.svg#icon__milk"></use>
+              </svg>
+              <p class="categories__header">млекопитающие</p>
+            </a>
+          </li>
+          <li class="categories__item">
+            <a href="category.html">
+              <svg>
+                <use xlink:href="img/sprites/sprite.svg#icon__eat"></use>
+              </svg>
+              <p class="categories__header">корма</p>
+            </a>
+          </li>
+          <li class="categories__item">
+            <a href="category.html">
+              <svg>
+                <use xlink:href="img/sprites/sprite.svg#icon__terr"></use>
+              </svg>
+              <p class="categories__header">террариум</p>
+            </a>
+          </li>
+          <li class="categories__item">
+            <a href="category.html">
+              <svg>
+                <use xlink:href="img/sprites/sprite.svg#icon__product"></use>
+              </svg>
+              <p class="categories__header">оборудование</p>
+            </a>
+          </li>
+          <li class="categories__item">
+            <a href="category.html">
+              <svg>
+                <use xlink:href="img/sprites/sprite.svg#icon__decor"></use>
+              </svg>
+              <p class="categories__header">декор</p>
+            </a>
+          </li>
+        </ul>
+      </section>
+    </div>
+  </main>
+  @@include('../../blocks/footer/footer.html')
+  <script src="js/libs.js"></script>
+  <script src="js/general.js"></script>
+</body>
+</html>

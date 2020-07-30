@@ -1,0 +1,33 @@
+.breadcrumbs {
+  padding: 20px 15px;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.breadcrumbs__list {
+  @include list-reset;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.breadcrumbs__item {
+  display: flex;
+  align-items: center;
+
+  &:not(:last-child) {
+    &::after {
+      @include pseudo;
+      content: "•";
+      margin: 0 5px;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .breadcrumbs {
+    padding: 0 0 20px 0;
+  }
+}

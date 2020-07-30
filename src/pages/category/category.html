@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Каталог</title>
+  @@include('../../blocks/favicon/favicon.html')
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body class="page">
+  @@include('../../blocks/header/header.html')
+  @@include('../../blocks/panel/panel.html')
+  <main class="main page__main">
+    @@include('../../blocks/sidebar/sidebar.html')
+    <div class="main__content main__content--inner">
+      <section class="breadcrumbs">
+        <ul class="breadcrumbs__list" itemscope itemtype="https://schema.org/BreadcrumbList">
+          <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+              <a href="/" title="Главная" itemprop="item">
+                  <span itemprop="name">Главная</span>
+                  <meta itemprop="position" content="0">
+              </a>
+          </li>
+          <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+            <a href="categories.html" title="Каталог" itemprop="item">
+                <span itemprop="name">Каталог</span>
+                <meta itemprop="position" content="1">
+            </a>
+          </li>
+          <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+            <p title="Каталог" itemprop="item">
+                <span itemprop="name">Рептилии</span>
+                <meta itemprop="position" content="2">
+            </p>
+          </li>
+        </ul>
+      </section>
+      <section class="category">
+        <h1 class="category__title title">рептилии</h1>
+        <div class="category__sorting sorting">
+          <ul class="sorting__list">
+            <li class="sorting__item">Сортировать:</li>
+            <li class="sorting__item"><a class="active" href="#" data-sort="resource|publishedon:desc" class="" data-dir="">по умолчанию</a> </li>
+            <li class="sorting__item"><a href="#" data-sort="ms|price:asc" class="" data-dir="">сначала дешевые</a></li>
+            <li class="sorting__item"><a href="#" data-sort="ms|price:desc" data-dir="">сначала дорогие</a></li>
+          </ul>
+          <div class="sorting__view">
+            <p class="sorting__text">Показать как:</p>
+            <a href="category.html" class="sorting__control sorting__control--current">
+              <svg>
+                <use xlink:href="img/sprites/sprite.svg#icon__block"></use>
+              </svg>
+            </a>
+            <a href="category-stroke.html" class="sorting__control">
+              <svg>
+                <use xlink:href="img/sprites/sprite.svg#icon__stroke"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <ul class="category__list">
+          <li class="category__item product-card">
+            <div class="product-card__wrapper">
+              <span class="product-card__flag">• в наличии</span>
+              <a href="product.html" class="product-card__img">
+                <img src="../../img/snake--01.png" >
+              </a>
+              <a href="product.html" class="product-card__header">Гондурасские королевские змеи</a>
+              <p class="product-card__desc">самцы, самки</p>
+              <p class="product-card__price">от 50 000 ₽</p>
+              <div class="product-card__controls">
+                <div class="product-card__counter">
+                  <button class="product-card__control product-card__control--min">-</button>
+                  <input type="text" class="product-card__count" value="1" onkeyup="this.value = this.value.replace(/[^\d]/g,'');">
+                  <button class="product-card__control product-card__control--max">+</button>
+                </div>
+                <a href="" class="product-card__buy buy">купить</a>
+              </div>
+              <a href="#" class="product-card__click one-click">купить в 1 клик</a>
+            </div>
+          </li>
+          <li class="category__item product-card">
+            <div class="product-card__wrapper">
+              <span class="product-card__flag product-card__flag--order">под заказ</span>
+              <a href="product.html" class="product-card__img">
+                <img src="../../img/snake--02.png" >
+              </a>
+              <a href="product.html" class="product-card__header">Лучистый полоз альбино</a>
+              <p class="product-card__desc">самцы, самки</p>
+              <p class="product-card__price">от 4 000 ₽</p>
+              <div class="product-card__controls">
+                <div class="product-card__counter">
+                  <button class="product-card__control product-card__control--min">-</button>
+                  <input type="text" class="product-card__count" value="1" onkeyup="this.value = this.value.replace(/[^\d]/g,'');">
+                  <button class="product-card__control product-card__control--max">+</button>
+                </div>
+                <a href="" class="product-card__buy buy">купить</a>
+              </div>
+              <a href="#" class="product-card__click one-click">купить в 1 клик</a>
+            </div>
+          </li>
+          <li class="category__item product-card">
+            <div class="product-card__wrapper">
+              <span class="product-card__flag">• в наличии</span>
+              <a href="product.html" class="product-card__img">
+                <img src="../../img/snake--03.png" >
+              </a>
+              <a href="product.html" class="product-card__header">Амурский полоз</a>
+              <p class="product-card__desc">самцы, самки</p>
+              <p class="product-card__price">от 30 000 ₽</p>
+              <div class="product-card__controls">
+                <div class="product-card__counter">
+                  <button class="product-card__control product-card__control--min">-</button>
+                  <input type="text" class="product-card__count" value="1" onkeyup="this.value = this.value.replace(/[^\d]/g,'');">
+                  <button class="product-card__control product-card__control--max">+</button>
+                </div>
+                <a href="" class="product-card__buy buy">купить</a>
+              </div>
+              <a href="#" class="product-card__click one-click">купить в 1 клик</a>
+            </div>
+          </li>
+          <li class="category__item product-card">
+            <div class="product-card__wrapper">
+              <span class="product-card__flag">• в наличии</span>
+              <a href="product.html" class="product-card__img">
+                <img src="../../img/snake--04.png" >
+              </a>
+              <a href="product.html" class="product-card__header">Гондурасские королевские змеи</a>
+              <p class="product-card__desc">самцы, самки</p>
+              <p class="product-card__price">от 50 000 ₽</p>
+              <div class="product-card__controls">
+                <div class="product-card__counter">
+                  <button class="product-card__control product-card__control--min">-</button>
+                  <input type="text" class="product-card__count" value="1" onkeyup="this.value = this.value.replace(/[^\d]/g,'');">
+                  <button class="product-card__control product-card__control--max">+</button>
+                </div>
+                <a href="" class="product-card__buy buy">купить</a>
+              </div>
+              <a href="#" class="product-card__click one-click">купить в 1 клик</a>
+            </div>
+          </li>
+          <li class="category__item product-card">
+            <div class="product-card__wrapper">
+              <span class="product-card__flag">• в наличии</span>
+              <a href="product.html" class="product-card__img">
+                <img src="../../img/snake--05.png" >
+              </a>
+              <a href="product.html" class="product-card__header">Гондурасские королевские змеи</a>
+              <p class="product-card__desc">самцы, самки</p>
+              <p class="product-card__price">от 50 000 ₽</p>
+              <div class="product-card__controls">
+                <div class="product-card__counter">
+                  <button class="product-card__control product-card__control--min">-</button>
+                  <input type="text" class="product-card__count" value="1" onkeyup="this.value = this.value.replace(/[^\d]/g,'');">
+                  <button class="product-card__control product-card__control--max">+</button>
+                </div>
+                <a href="" class="product-card__buy buy">купить</a>
+              </div>
+              <a href="#" class="product-card__click one-click">купить в 1 клик</a>
+            </div>
+          </li>
+          <li class="category__item product-card">
+            <div class="product-card__wrapper">
+              <span class="product-card__flag">• в наличии</span>
+              <a href="product.html" class="product-card__img">
+                <img src="../../img/snake--06.png" >
+              </a>
+              <a href="product.html" class="product-card__header">Гондурасские королевские змеи</a>
+              <p class="product-card__desc">самцы, самки</p>
+              <p class="product-card__price">от 50 000 ₽</p>
+              <div class="product-card__controls">
+                <div class="product-card__counter">
+                  <button class="product-card__control product-card__control--min">-</button>
+                  <input type="text" class="product-card__count" value="1" onkeyup="this.value = this.value.replace(/[^\d]/g,'');">
+                  <button class="product-card__control product-card__control--max">+</button>
+                </div>
+                <a href="" class="product-card__buy buy">купить</a>
+              </div>
+              <a href="#" class="product-card__click one-click">купить в 1 клик</a>
+            </div>
+          </li>
+          <li class="category__item product-card">
+            <div class="product-card__wrapper">
+              <span class="product-card__flag">• в наличии</span>
+              <a href="product.html" class="product-card__img">
+                <img src="../../img/snake--07.png" >
+              </a>
+              <a href="product.html" class="product-card__header">Гондурасские королевские змеи</a>
+              <p class="product-card__desc">самцы, самки</p>
+              <p class="product-card__price">от 50 000 ₽</p>
+              <div class="product-card__controls">
+                <div class="product-card__counter">
+                  <button class="product-card__control product-card__control--min">-</button>
+                  <input type="text" class="product-card__count" value="1" onkeyup="this.value = this.value.replace(/[^\d]/g,'');">
+                  <button class="product-card__control product-card__control--max">+</button>
+                </div>
+                <a href="" class="product-card__buy buy">купить</a>
+              </div>
+              <a href="#" class="product-card__click one-click">купить в 1 клик</a>
+            </div>
+          </li>
+          <li class="category__item product-card">
+            <div class="product-card__wrapper">
+              <span class="product-card__flag">• в наличии</span>
+              <a href="product.html" class="product-card__img">
+                <img src="../../img/snake--08.png" >
+              </a>
+              <a href="product.html" class="product-card__header">Гондурасские королевские змеи</a>
+              <p class="product-card__desc">самцы, самки</p>
+              <p class="product-card__price">от 50 000 ₽</p>
+              <div class="product-card__controls">
+                <div class="product-card__counter">
+                  <button class="product-card__control product-card__control--min">-</button>
+                  <input type="text" class="product-card__count" value="1" onkeyup="this.value = this.value.replace(/[^\d]/g,'');">
+                  <button class="product-card__control product-card__control--max">+</button>
+                </div>
+                <a href="" class="product-card__buy buy">купить</a>
+              </div>
+              <a href="#" class="product-card__click one-click">купить в 1 клик</a>
+            </div>
+          </li>
+          <li class="category__item product-card">
+            <div class="product-card__wrapper">
+              <span class="product-card__flag">• в наличии</span>
+              <a href="product.html" class="product-card__img">
+                <img src="../../img/snake--09.png" >
+              </a>
+              <a href="product.html" class="product-card__header">Гондурасские королевские змеи</a>
+              <p class="product-card__desc">самцы, самки</p>
+              <p class="product-card__price">от 50 000 ₽</p>
+              <div class="product-card__controls">
+                <div class="product-card__counter">
+                  <button class="product-card__control product-card__control--min">-</button>
+                  <input type="text" class="product-card__count" value="1" onkeyup="this.value = this.value.replace(/[^\d]/g,'');">
+                  <button class="product-card__control product-card__control--max">+</button>
+                </div>
+                <a href="" class="product-card__buy buy">купить</a>
+              </div>
+              <a href="#" class="product-card__click one-click">купить в 1 клик</a>
+            </div>
+          </li>
+        </ul>
+        @@include('../../blocks/pagination/pagination.html')
+        <div class="category__text text">
+          <h2 class="text__title title">Продажа рептилий</h2>
+          <p>Идейные соображения высшего порядка, а также начало повседневной работы по формированию позиции позволяет оценить значение модели развития. Значимость этих проблем настолько очевидна, что дальнейшее развитие различных форм деятельности обеспечивает широкому кругу (специалистов) участие в формировании новых предложений.
+            Идейные соображения высшего порядка, а также начало повседневной работы по формированию позиции позволяет оценить значение модели развития. Равным образом постоянный количественный рост и сфера нашей активности играет важную роль в формировании системы обучения кадров, соответствует насущным потребностям.
+            </p>
+        </div>
+      </section>
+    </div>
+  </main>
+  @@include('../../blocks/footer/footer.html')
+  <script src="js/libs.js"></script>
+  <script src="js/general.js"></script>
+</body>
+</html>
