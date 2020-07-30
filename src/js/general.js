@@ -31,3 +31,9 @@ $(`.product-card__control--max`).click(function () {
   $input.change();
   return false;
 });
+
+$(`.slider__list`).slick({
+  prevArrow: `.slider__control--prev`,
+  nextArrow: `.slider__control--next`,
+  dots: false
+})

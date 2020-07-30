@@ -1,0 +1,22 @@
+.text {
+  padding: 30px 15px;
+
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000000;
+
+  p {
+    margin-bottom: 15px;
+  }
+}
+
+.text__title {
+  margin-bottom: 10px;
+}
+
+@media (min-width: 1200px) {
+  .text {
+    padding: 0;
+  }
+}

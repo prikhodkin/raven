@@ -10,8 +10,14 @@
   font-size: 14px;
   line-height: 17px;
   color: #000000;
+  text-transform: uppercase;
   border: 1px dashed #282828;
   border-radius: 5px;
+  transition: all 0.3s;
+
+  &:hover {
+    background-color: #fcde43;
+  }
 
   &::before {
     @include pseudo;
