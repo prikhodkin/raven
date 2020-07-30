@@ -93,7 +93,16 @@
   }
 
   .header__cart {
+    top: 0;
     right: calc(50% - 585px);
+
+    &--fixed {
+      position: fixed;
+      top: 0;
+      right: calc(50% - 585px);
+      z-index: 300;
+      background-color: #fcde43;
+    }
   }
 
   .header__bottom {

@@ -37,3 +37,13 @@ $(`.slider__list`).slick({
   nextArrow: `.slider__control--next`,
   dots: false
 })
+
+if($(window).width() >= 768) {
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 39) {
+      $(`.header__cart`).addClass(`header__cart--fixed`);
+    } else {
+      $(`.header__cart`).removeClass(`header__cart--fixed`);
+    }
+  })
+}
