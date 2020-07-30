@@ -6,12 +6,6 @@ $(".menu__button").on("click", function () {
 $(".menu__close").on("click", function () {
   $(".menu__inner").fadeOut();
 });
-$(".panel__catalog").on("click", function () {
-  $(".sidebar").fadeIn();
-});
-$(".sidebar__close").on("click", function () {
-  $(".sidebar").fadeOut();
-});
 $("input[type=tel]").mask("+7(999) 999-99-99");
 $(".product-card__control--min").click(function () {
   var $input = $(this).parent().find("input");
@@ -32,6 +26,16 @@ $(".slider__list").slick({
   nextArrow: ".slider__control--next",
   dots: false
 });
+
+if ($(window).width() < 1200) {
+  $(".panel__catalog").on("click", function (evt) {
+    evt.preventDefault();
+    $(".sidebar").fadeIn();
+  });
+  $(".sidebar__close").on("click", function () {
+    $(".sidebar").fadeOut();
+  });
+}
 
 if ($(window).width() >= 768) {
   $(window).scroll(function () {
