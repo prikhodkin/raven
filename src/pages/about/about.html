@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>О нас</title>
+  @@include('../../blocks/favicon/favicon.html')
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body class="page">
+  @@include('../../blocks/header/header.html')
+  @@include('../../blocks/panel/panel.html')
+  <main class="main page__main">
+    @@include('../../blocks/sidebar/sidebar.html')
+    <div class="main__content main__content--inner">
+      <section class="text">
+        <h1 class="text__title title">О нас</h1>
+        <p>На нашем сайте представлен обширный ассортимент животных, террариумов, оборудования, декора и кормов. Мы предоставляем полный спектр услуг, включая оформление террариумов, обслуживание, онлайн консультирование и многое другое. В нашем магазине вы всегда сможете собрать полный комплект для содержания питомца. А если вы новичок, наши сотрудники с радостью помогут выбрать первое животное и обустроить идеальный террариум.</p>
+        <img src="../../img/about.png" style="margin: 30px 0 50px 0;">
+        <h2>Что вы получаете, работая с нами</h2>
+        <p>Наш основной магазин находится в шаговой доступности от станции метро Семеновская и представляет собой изумительный шоу-рум. Сотрудники зоомагазина ежедневно проводят информативные экскурсии и предлагают посетителям познакомиться с экзотическими животными не только через стекло террариумов, но и прикоснуться к ним вживую. Каждый желающий имеет уникальную возможность приобрести необычное животное и все необходимое для его содержания. Кроме того, мы предоставляем гарантию на животных, приобретенных у нас, клубную карту с множеством привилегий, отель для животных и другие услуги.</p>
+        <p>Наш основной магазин находится в шаговой доступности от станции метро Семеновская и представляет собой изумительный шоу-рум. Сотрудники зоомагазина ежедневно проводят информативные экскурсии и предлагают посетителям познакомиться с экзотическими животными не только через стекло террариумов, но и прикоснуться к ним вживую. Каждый желающий имеет уникальную возможность приобрести необычное животное и все необходимое для его содержания. Кроме того, мы предоставляем гарантию на животных, приобретенных у нас, клубную карту с множеством привилегий, отель для животных и другие услуги.</p>
+        <p>Наш основной магазин находится в шаговой доступности от станции метро Семеновская и представляет собой изумительный шоу-рум. Сотрудники зоомагазина ежедневно проводят информативные экскурсии и предлагают посетителям познакомиться с экзотическими животными не только через стекло террариумов, но и прикоснуться к ним вживую. Каждый желающий имеет уникальную возможность приобрести необычное животное и все необходимое для его содержания. Кроме того, мы предоставляем гарантию на животных, приобретенных у нас, клубную карту с множеством привилегий, отель для животных и другие услуги.</p>
+        <div class="text__gallery gallery">
+          <ul class="gallery__list">
+            <li class="gallery__item"><img src="../../img/tc_img_01.png" alt=""></li>
+            <li class="gallery__item"><img src="../../img/image16.png" alt=""></li>
+            <li class="gallery__item"><img src="../../img/image17.png" alt=""></li>
+            <li class="gallery__item"><img src="../../img/image18.png" alt=""></li>
+            <li class="gallery__item"><img src="../../img/image19.png" alt=""></li>
+            <li class="gallery__item"><img src="../../img/about.png" alt=""></li>
+          </ul>
+          <div class="gallery__wrapper">
+            <ul class="gallery__sub-list">
+              <li class="gallery__item"><img src="../../img/tc_img_01.png" alt=""></li>
+              <li class="gallery__item"><img src="../../img/image16.png" alt=""></li>
+              <li class="gallery__item"><img src="../../img/image17.png" alt=""></li>
+              <li class="gallery__item"><img src="../../img/image18.png" alt=""></li>
+              <li class="gallery__item"><img src="../../img/image19.png" alt=""></li>
+              <li class="gallery__item"><img src="../../img/about.png" alt=""></li>
+            </ul>
+            <div class="gallery__controls">
+              <button class="gallery__control gallery__control--prev">
+                <svg>
+                  <use xlink:href="img/sprites/sprite.svg#icon__arrow--prev"></use>
+                </svg>
+              </button>
+              <button class="gallery__control gallery__control--next">
+                <svg>
+                  <use xlink:href="img/sprites/sprite.svg#icon__arrow--next"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+  @@include('../../blocks/footer/footer.html')
+  <script src="js/libs.js"></script>
+  <script src="js/general.js"></script>
+</body>
+</html>

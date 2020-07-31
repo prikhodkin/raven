@@ -5,6 +5,17 @@
   z-index: 100;
 }
 
+.main__pagination {
+  margin-bottom: 30px;
+}
+
+@media (min-width: 768px) {
+  .main__pagination {
+    margin-top: 70px;
+    margin-bottom: 80px;
+  }
+}
+
 @media (min-width: 1200px) {
   .main {
     @include page-wrapper;

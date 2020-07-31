@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Отзывы</title>
+  @@include('../../blocks/favicon/favicon.html')
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body class="page">
+  @@include('../../blocks/header/header.html')
+  @@include('../../blocks/panel/panel.html')
+  <main class="main page__main">
+    @@include('../../blocks/sidebar/sidebar.html')
+    <div class="main__content main__content--inner">
+      <section class="reviews">
+        <h1 class="reviews__title title">Отзывы</h1>
+        <img class="reviews__avatar" src="../../img/girl.png" alt="">
+        <h2 class="reviews__header">андрей чесноков</h2>
+        <img src="../../img/stars.png" alt="" width="95" style="width: 95px; margin-bottom: 30px;">
+        <p>Оформляя заказ в нашем магазине, вы получаете массу преимуществ:
+
+          • Во-первых, это удобное получение заказа в пункте выдачи или любом отделении Почты России.
+          • Во-вторых, это низкие цены для всех жителей России.
+          • В-третьих, это полная прозрачность - вы всегда можете узнать, где находится ваш заказ.
+          • И в-четвертых, это абсолютная надежность – совершая у нас покупки, вы всегда будете уверены, что ваш заказ поступит к вам в целости и сохранности, а техника будет рабочей с заводским гарантийным талоном и всеми необходимыми документами.</p>
+        <p>Оформляя заказ в нашем магазине, вы получаете массу преимуществ:
+
+            • Во-первых, это удобное получение заказа в пункте выдачи или любом отделении Почты России.
+            • Во-вторых, это низкие цены для всех жителей России.
+            • В-третьих, это полная прозрачность - вы всегда можете узнать, где находится ваш заказ.
+            • И в-четвертых, это абсолютная надежность – совершая у нас покупки, вы всегда будете уверены, что ваш заказ поступит к вам в целости и сохранности, а техника будет рабочей с заводским гарантийным талоном и всеми необходимыми документами.</p>
+        <ul class="reviews__images">
+          <li class="reviews__image"><img src="../../img/r1.png" alt=""></li>
+          <li class="reviews__image"><img src="../../img/r2.png" alt=""></li>
+          <li class="reviews__image"><img src="../../img/r3.png" alt=""></li>
+          <li class="reviews__image"><img src="../../img/r1.png" alt=""></li>
+        </ul>
+      </section>
+      <div class="pagination main__pagination">
+        <ul class="pagination__list">
+          <li class="pagination__item pagination__item--prev">
+            <a href="">
+              <svg>
+                <use xlink:href="img/sprites/sprite.svg#icon__pagination-prev"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="pagination__item"><a href="">1</a></li>
+          <li class="pagination__item pagination__item--current"><a href="">2</a></li>
+          <li class="pagination__item"><a href="">3</a></li>
+          <li class="pagination__item"><a href="">4</a></li>
+          <li class="pagination__item"><a href="">5</a></li>
+          <li class="pagination__item pagination__item--next">
+            <a href="">
+              <svg>
+                <use xlink:href="img/sprites/sprite.svg#icon__pagination-next"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      @@include('../../blocks/consultation/consultation.html')
+    </div>
+  </main>
+  @@include('../../blocks/footer/footer.html')
+  <script src="js/libs.js"></script>
+  <script src="js/general.js"></script>
+</body>
+</html>
