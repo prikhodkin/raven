@@ -46,4 +46,32 @@ if ($(window).width() >= 768) {
     }
   });
 }
+
+$('.gallery__list').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  dots: false,
+  fade: false,
+  infinite: true,
+  asNavFor: '.gallery__sub-list',
+  responsive: [{
+    breakpoint: 1199,
+    settings: {
+      dots: true
+    }
+  }]
+});
+$('.gallery__sub-list').slick({
+  slidesToShow: 5,
+  slidesToScroll: 1,
+  asNavFor: '.gallery__list',
+  dots: false,
+  centerMode: false,
+  infinite: true,
+  focusOnSelect: true,
+  arrows: true,
+  prevArrow: ".gallery__control--prev",
+  nextArrow: ".gallery__control--next"
+});
 //# sourceMappingURL=maps/general.js.map
