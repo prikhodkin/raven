@@ -34,6 +34,23 @@ $(`.product__control--min`).click(function () {
   return false;
 });
 
+$(`.cart___control--max`).click(function () {
+  const $input = $(this).parent().find(`input`);
+  $input.val(parseInt($input.val()) + 1);
+  $input.change();
+  return false;
+});
+
+
+$(`.cart___control--min`).click(function () {
+  const $input = $(this).parent().find(`input`);
+  let count = parseInt($input.val()) - 1;
+  count = count < 1 ? 1 : count;
+  $input.val(count);
+  $input.change();
+  return false;
+});
+
 $(`.product__control--max`).click(function () {
   const $input = $(this).parent().find(`input`);
   $input.val(parseInt($input.val()) + 1);

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Каталог</title>
+  @@include('../../blocks/favicon/favicon.html')
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body class="page">
+  @@include('../../blocks/header/header.html')
+  @@include('../../blocks/panel/panel.html')
+  <main class="main page__main">
+    @@include('../../blocks/sidebar/sidebar.html')
+    <div class="main__content main__content--inner">
+      <section class="cart">
+        <div class="cart__top">
+          <h1 class="cart__title title">Корзина</h1>
+          <p class="cart__total"><span>Итого:</span> 148 200₽</p>
+        </div>
+        <ul class="cart__products">
+          <li class="cart__product">
+            <span class="cart__number">1</span>
+            <div class="cart__row">
+              <a href="product.html" class="cart__img">
+                <img src="../../img/p1.png" alt="">
+              </a>
+              <div class="cart__body">
+                <a href="product.html" class="cart__header">Граммостола пульхра (Grammostola pulchra)</a>
+                <p class="cart__cats">Змеи</p>
+              </div>
+            </div>
+            <div class="cart__row">
+              <p class="cart__price">24 700₽</p>
+              <div class="cart___counter">
+                <button class="cart___control cart___control--min">-</button>
+                <input type="text" class="cart___count" value="1" onkeyup="this.value = this.value.replace(/[^\d]/g,'');">
+                <button class="cart___control cart___control--max">+</button>
+              </div>
+            </div>
+            <button class="cart__del">
+              <svg class="svg">
+                <use xlink:href="img/sprites/sprite.svg#icon__close"></use>
+              </svg>
+            </button>
+          </li>
+          <li class="cart__product">
+            <span class="cart__number">2</span>
+            <div class="cart__row">
+              <a href="product.html" class="cart__img">
+                <img src="../../img/p1.png" alt="">
+              </a>
+              <div class="cart__body">
+                <a href="product.html" class="cart__header">Граммостола пульхра (Grammostola pulchra)</a>
+                <p class="cart__cats">Змеи</p>
+              </div>
+            </div>
+            <div class="cart__row">
+              <p class="cart__price">24 700₽</p>
+              <div class="cart___counter">
+                <button class="cart___control cart___control--min">-</button>
+                <input type="text" class="cart___count" value="1" onkeyup="this.value = this.value.replace(/[^\d]/g,'');">
+                <button class="cart___control cart___control--max">+</button>
+              </div>
+            </div>
+            <button class="cart__del">
+              <svg class="svg">
+                <use xlink:href="img/sprites/sprite.svg#icon__close"></use>
+              </svg>
+            </button>
+          </li>
+          <li class="cart__product">
+            <span class="cart__number">3</span>
+            <div class="cart__row">
+              <a href="product.html" class="cart__img">
+                <img src="../../img/p1.png" alt="">
+              </a>
+              <div class="cart__body">
+                <a href="product.html" class="cart__header">Граммостола пульхра (Grammostola pulchra)</a>
+                <p class="cart__cats">Змеи</p>
+              </div>
+            </div>
+            <div class="cart__row">
+              <p class="cart__price">24 700₽</p>
+              <div class="cart___counter">
+                <button class="cart___control cart___control--min">-</button>
+                <input type="text" class="cart___count" value="1" onkeyup="this.value = this.value.replace(/[^\d]/g,'');">
+                <button class="cart___control cart___control--max">+</button>
+              </div>
+            </div>
+            <button class="cart__del">
+              <svg class="svg">
+                <use xlink:href="img/sprites/sprite.svg#icon__close"></use>
+              </svg>
+            </button>
+          </li>
+        </ul>
+        <div class="cart__rec">
+          <h2 class="cart__sub-title title">СПОСОБ ПОЛУЧЕНИЯ</h2>
+          <ul class="cart__select">
+            <li class="cart__item">
+              <label class="cart__label">
+                <input type="radio" class="cart__input" name="name2" checked>
+                <span>ОФФЛАЙН МАГАЗИН:  ЕКАТЕРИНБУРГ, пер. Дубровинский, 33</span>
+              </label>
+            </li>
+          </ul>
+        </div>
+        <div class="cart__info">
+          <h2 class="cart__sub-title title">контактная информация</h2>
+          <ul class="cart__list">
+            <li class="cart__contact">
+              <label class="cart__field">
+                <p>ВАШ ТЕЛЕФОН <span>*</span></p>
+                <input type="tel" class="cart__enter" placeholder="введите номер телефона">
+              </label>
+            </li>
+            <li class="cart__contact">
+              <label class="cart__field">
+                <p>АДРЕС E-mail <span>*</span></p>
+                <input type="email" class="cart__enter" placeholder="введите  e-mail">
+              </label>
+            </li>
+            <li class="cart__contact">
+              <label class="cart__field">
+                <p>ИМЯ <span>*</span></p>
+                <input type="text" class="cart__enter" placeholder="введите ваше имя">
+              </label>
+            </li>
+          </ul>
+        </div>
+        <div class="cart__payment">
+          <h2 class="cart__sub-title title">СПОСОБ ОПЛАТЫ</h2>
+          <ul class="cart__select">
+            <li class="cart__item">
+              <label class="cart__label">
+                <input type="radio" class="cart__input" name="name1" checked>
+                <span>оплатить при получении</span>
+                <img src="../../img/paysystems_1.png" alt="">
+              </label>
+            </li>
+            <li class="cart__item">
+              <label class="cart__label">
+                <input type="radio" class="cart__input" name="name1">
+                <span>оплатить онлайн</span>
+                <img src="../../img/paysystems_2.png" alt="">
+              </label>
+            </li>
+            <li class="cart__item">
+              <label class="cart__label">
+                <input type="radio" class="cart__input" name="name1">
+                <span>выставить счёт для юридического лица</span>
+              </label>
+            </li>
+          </ul>
+        </div>
+        <button class="cart__button button">оформить заказ</button>
+      </section>
+    </div>
+  </main>
+  @@include('../../blocks/footer/footer.html')
+  <script src="js/libs.js"></script>
+  <script src="js/general.js"></script>
+</body>
+</html>
