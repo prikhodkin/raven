@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Новости</title>
+  @@include('../../blocks/favicon/favicon.html')
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body class="page">
+  @@include('../../blocks/header/header.html')
+  @@include('../../blocks/panel/panel.html')
+  <main class="main page__main">
+    @@include('../../blocks/sidebar/sidebar.html')
+    <div class="main__content main__content--inner">
+      <section class="contacts">
+        <h1 class="contacts__title title">адреса и контакты</h1>
+        <div class="contacts__inner">
+          <div class="contacts__content">
+            <h2>ВРЕМЯ РАБОТЫ:</h2>
+            <p>С 09:00 до 21:00</p>
+            <p>ПН - ВС, БЕЗ ВЫХОДНЫХ</p>
+            <br>
+            <h2>ПН - ВС, БЕЗ ВЫХОДНЫХ</h2>
+            <p>+7 (912) 212-80-00</p>
+            <p>8 800 123-45-67</p>
+            <br>
+            <h2>Адрес:</h2>
+            <p>620000 Россия, Екатеринбург, ул. пер.</p>
+            <p>Дубровинский, 33</p>
+            <br>
+            <h2>Контактная информация и реквизиты</h2>
+            <p>Наименование: ООО "Новобыт-Р".</p>
+            <br>
+            <p>ИНН / КПП: 2463226961 / 246401001. </p>
+            <p>ОГРН: 1112468012986. </p>
+            <p>Юридический адрес: 660064, г. Красноярск, ул. Семафорная, 261Д. </p>
+            <p>Фактический адрес: 660064, г. Красноярск, ул. Семафорная, 261Д. </p>
+            <p>Телефон: 8(391) 218-15-15, 8-800-250-58-10. </p>
+            <p>E-mail: info@novobyt.ru</p>
+            <p>р/с 40702810931000095417. </p>
+            <p>в КРАСНОЯРСКОЕ ОТДЕЛЕНИЕ N 8646 ПАО СБЕРБАНК. </p>
+            <p>к/с 30101810800000000627. </p>
+            <p>БИК 040407627.</p>
+          </div>
+          <form action="" class="contacts__form">
+            <p class="contacts__header">Есть вопросы? Напишите вопрос и мы проконсультируем вас</p>
+            <input type="text" class="contacts__input" placeholder="Введите Ваше имя">
+            <input type="email" class="contacts__input" placeholder="Введите ваш E-mail" required>
+            <button class="contacts__button button">отправить</button>
+          </form>
+        </div>
+      </section>
+      <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ab9382289b2d5d6b850e57b6fb6e812c07b7c97317deb55e0338cb8283bb5621d&amp;source=constructor" width="100%" height="250" frameborder="0"></iframe>
+    </div>
+  </main>
+  @@include('../../blocks/footer/footer.html')
+  <script src="js/libs.js"></script>
+  <script src="js/general.js"></script>
+</body>
+</html>

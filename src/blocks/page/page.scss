@@ -15,5 +15,9 @@
   .page__main {
     margin-top: 20px;
     padding-bottom: 80px;
+
+    &--full {
+      display: block;
+    }
   }
 }
