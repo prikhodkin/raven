@@ -96,7 +96,7 @@
 @mixin includeFont ($font-weight, $font-family, $font-name) {
   font-weight: $font-weight;
   font-family: "#{$font-family}";
-  src: local($font-family), url("../../fonts/#{$font-name}.woff2") format("woff2"), url("../../fonts/#{$font-name}.woff") format("woff");
+  src: url("../../fonts/#{$font-name}.woff2") format("woff2"), url("../../fonts/#{$font-name}.woff") format("woff");
   font-display: swap;
 }
 
